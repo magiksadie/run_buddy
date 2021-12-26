@@ -38,6 +38,50 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
 }
+/*hero/jumbotron*/
+.hero {
+    background-image: url("../assets/images/hero_bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero_form  {
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    border: #024e76 solid 3px;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+}
+.hero_form h3 {
+    margin: 0px;
+    font-size: 24px;
+}
+.hero_form p {
+    margin: 5px 0 15px 0;
+}
+.form_input {
+    font-size: 16px;
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.hero_form label {
+    margin: 0px 5px;
+}
+.hero_form button {
+    border: none;
+    color: #fce138;
+    background-color: #024e76;
+    padding: 10px 20px;
+    font-size: 16px;
+}
 /*footer*/
 footer {
     background: #fce138;
@@ -57,4 +101,8 @@ footer div {
 }
 footer a {
     color: #024e76;
+}
+/*!*/
+section {
+    padding: 60px;
 }
