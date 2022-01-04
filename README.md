@@ -1,4 +1,4 @@
-# Run Buddy Inc.
+# Run Buddy, Inc
 
 ## Purpose
 A website that offers fitness training services.
@@ -12,3 +12,5 @@ https://magiksadie.github.io/run_buddy/
 
 ## Contribution
 Made with ❤️ by Sadie Harty
+
+### ©️2019 Run Buddy, Inc 
