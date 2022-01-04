@@ -12,3 +12,5 @@ https://magiksadie.github.io/run_buddy/
 
 ## Contribution
 Made with ❤️ by Sadie Harty
+
+### ©️2019 Run Buddy, Inc 
