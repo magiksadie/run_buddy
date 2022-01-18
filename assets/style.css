@@ -34,7 +34,7 @@ header nav ul li {
     display: inline;
 }
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 22px;
 }
@@ -45,6 +45,10 @@ header nav ul li a {
     background-size: cover;
     background-position: center;
     position: relative;
+    align-items: flex-start;
+}
+.hero-cta {
+    line-height: 1.2;
 }
 .hero_form  {
     background-color: #fce138;
@@ -107,7 +111,7 @@ footer a {
     text-align: center;
 }
 .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
@@ -225,4 +229,26 @@ section {
 }
 .text-right {
     text-align: right;
+}
+
+/* Media query for smaller desktop screens and smaller*/
+@media screen and (max-width: 980px) {
+    header h1 a {
+        /*this will be applied on any screen smaller than 980px*/
+        color: tomato;
+    }
+}
+/*Media query for tablets and smaller*/
+@media screen and (max-width: 768px) {
+    header h1 {
+        /*this will be applied to any screen between 768px and 575px*/
+        font-size: 80px;
+    }
+}
+/*Media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+    header h1 {
+        /*this will be applied to any screen smaller than 575px*/
+        font-size: 100px;
+    }
 }
