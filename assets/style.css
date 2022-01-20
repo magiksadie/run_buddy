@@ -12,26 +12,30 @@ body {
 /* header */
 header {
     padding: 20px 35px; /*spacing*/
-    background-color: #39a6b2; 
+    background-color: #39a6b2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
   }
 header h1 {
       font-weight: bold;
       font-size: 36px;
       color: #fce138;
       margin: 0;
-      display: inline;
   }
-
 header a {
     text-decoration: none;
     color: #fce138;
 }
 header nav {
-    float: right;
     margin: 7px 0;
 }
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 header nav ul li a {
     margin: 0 30px;
@@ -41,20 +45,33 @@ header nav ul li a {
 /*hero/jumbotron*/
 .hero {
     background-image: url("../assets/images/hero_bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
 }
 .hero_form  {
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
+    width: 40%;
     color: #024e76;
     border: #024e76 solid 3px;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
+    margin: 3.5;
 }
 .hero_form h3 {
     margin: 0px;
@@ -87,15 +104,16 @@ footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100;
 }
 footer h2 {
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
@@ -107,12 +125,13 @@ footer a {
     text-align: center;
 }
 .section-title {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
+    font-size: 48px;
     border-bottom: 3px solid;
+    color: #024e76;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
   .primary-border {
     border-color: #fce138;
@@ -121,14 +140,14 @@ footer a {
     border-color: #39a6b2;
   }
 .intro p {
-    margin: 0 auto;
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
+    margin: 0 auto;
     font-size: 20px;
+    text-align: center;
 }
 .steps {
-    text-align: center;
     background: #fce138;
 }
 section {
@@ -226,3 +245,62 @@ section {
 .text-right {
     text-align: right;
 }
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .step h3 {
+      flex: 1 100%;
+      text-align: center;
+    }
+  
+    .step-info {
+      flex: 2 100%;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .step-img {
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .step-text {
+      flex: 100%;  
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .hero-form button {
+      width: 100%;
+    }
+  
+    .section-title {
+      width: 95%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .trainer {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  
+    .contact-form {
+      order: 3;
+    }
+  }
